@@ -1,4 +1,3 @@
 function FindProxyForURL(url, host) {
-    if (dnsDomainIs(host, ".i2p")) { return "HTTP localhost:4444"; }
-    if (dnsDomainIs(host, ".onion")) { return "SOCKS localhost:9050"; }
+    return "HTTP 127.0.0.1:4444";
 }
